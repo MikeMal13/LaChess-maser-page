@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LaChess_maser_page.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="icon" type="image/x-icon" href="Media/laChessLogoSimplenoBackground.png">
+    <title>LaChess</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="customeDropDown.css" rel="stylesheet" />
+    <script src="customeDropDown.js"></script>
+
+    <%laChess.Class1.feeling = 'e'; %>
+   
+    <%if (laChess.Class1.feeling == 'c'){%>
+
+        <style>tr{background-color:antiquewhite;}</style>
+
+    <%}else if (laChess.Class1.feeling == 'd'){%>
+    
+        <style>tr{background-color: rgb(196, 101, 186);}</style>    
+    <%}else if (laChess.Class1.feeling == 'e'){%>
+    
+        <style>tr{background-color: white;}</style>    
+
+    <%}%>
+    <!-- if (feeling == 'n') then we stay with the defolt background -->
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+            <table id="table" border="0">
+                
+                <tr>
+                    <td colspan="2" id="Title">
+                        <div id="TitleDiv">
+                            <img class="logo" style="margin-top:20px;" src="../../Media/LaChessLogoNoBackground.png" />
+
+                            <h1 id="laChessTitle">LaChess</h1>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="sideBar1">
+                        <div id="menu">
+                            <div id="menuClick">
+                                <a href="../Home/Home.aspx">Home</a>
+                                <a href="../login/Register.aspx">Register</a>
+                                <a href="../login/Login.aspx">Login</a>
+                                <a href="../Settings/Settings.aspx">Settings</a>
+                                <a href="../board/PlayBoard.aspx">playble board</a>
+                            </div>
+                            <div id="menuDropDown">
+                                <el>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">Players  👇</button>
+                                        <div class="dropdown-content">
+                                            <a href="../players/Bodbby%20Fischer.aspx">Bodbby Fischer</a>
+                                            <a href="../players/Gary%20Kaskarov.aspx">Gary Kaskarov</a>
+                                            <a href="../players/Hikaru%20Nakamura.aspx">Hikaru Nakamura</a>
+                                            <a href="../players/Magnus%20Carelson.aspx">Magnus Carelson</a>
+                                            <a href="../players/Ding%20Liren.aspx">Ding Liren</a>
+                                            <a href="../players/Lorem%20Ipsum.aspx">Lorem Ipsum</a>
+                                        </div> 
+                                    </div>
+                                </el>
+                                <el>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Openings  👇</button>
+                                    <div class="dropdown-content">
+                                        <a href="../openings/italian%20game.aspx">italian game</a>
+                                    </div> 
+                                </div>
+                            </el>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td rowspan="2" id ="main">
+                        
+                        <div id="mainDiv" class="main-backgrounfimaeg innerMain">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                        </div>
+                      </td>
+                </tr>
+                    <td id="sideBar2">
+                          <%
+                            List<string> facts = laChess.Class1.getRandomeFact(3);
+                            foreach(string fact in facts)
+                            {
+                                Response.Write("<div class='chessFact'><p class='chessFactText'>" + fact + "</p></div>");
+                            }
+                        %>
+                    </td>
+                <tr>
+                    <td id="bottomText" colspan="2">
+                        <h3 style="">Credits: </h3>
+                        <p style=""><a class="bottomTextLink" href="https://github.com/MikeMal13">Me/ MikeMal13</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--svg 
+          viewBox="0 0 200 200"
+          xmlns='http://www.w3.org/2000/svg'>
+
+          <filter id='noiseFilter'>
+            <feTurbulence 
+              type='fractalNoise' 
+              baseFrequency='.5' 
+              numOctaves='5' 
+              stitchTiles='stitch' />
+          </filter>
+
+          <rect
+            width='100%' 
+            height='200%' 
+            filter='url(#noiseFilter)' />
+        </svg-->
+    </form>
+
+</body>
+</html>
+
+

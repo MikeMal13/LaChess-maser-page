@@ -1,0 +1,109 @@
+﻿#everyThing {
+    margin-top: 0px;
+    margin-left: 10px;
+    height: 850px;
+    width: 1000px;
+}
+
+#registerTitle {
+    color: rgb(255, 239, 216);
+    font-weight: 900;
+    padding-left: 1px;
+    margin-bottom: -13px;
+}
+
+
+
+#allInputDivs {
+    height: 210px;
+    width: 320px;
+    /* sd */
+    border-color: black;
+    border-style: inset;
+    border-width: 3.1px;
+    /* other */
+    margin: 5px;
+    border-radius: 7.5px;
+    background-color: rgb(249, 217, 171);
+    float: left;
+}
+
+.textIn {
+    width: 290px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.namePass {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.submitButton {
+    width: 326.2px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: -1.5px;
+    position: static;
+    color: rgb(37, 0, 0);
+    background-color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    border-width: 1.55px;
+    border-color: black;
+    border-style: solid;
+    transition: background-color 1s, color 1s;
+}
+
+    .submitButton:hover {
+        color: rgb(49, 0, 0);
+        background-color: rgb(244, 223, 185);
+        transition-duration: 2.7s;
+        /* transition-delay: 1s; */
+    }
+
+    .submitButton:active {
+        color: rgb(245, 222, 179);
+        background-color: rgb(37, 0, 0);
+        transition-duration: .1s;
+    }
+
+#registerTitle {
+    margin: 5px;
+    font-size: 50px;
+}
+
+.errorLogs {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    width: 298px;
+    border-radius: 5px;
+    height: 40px;
+    float: left;
+    font-size: 20px;
+    transition: background-color .8s;
+}
+
+    .errorLogs:hover {
+        background-color: rgba(255, 179, 0, 0.3);
+    }
+
+.marks {
+    height: 190px;
+    width: 300px;
+    float: left;
+    /* margin: 0px 10px 0px 0px; */
+    border-radius: 7px;
+    padding: 10px;
+    /* border-style: inset;
+    border-width: 5px;
+    border-color: rgb(0 0 0 / 0.9); */
+    transition: background-color .8s;
+}
+
+    .marks:hover {
+        background-color: rgba(255, 179, 0, 0.174);
+    }

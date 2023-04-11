@@ -1,0 +1,158 @@
+﻿
+
+#everyThing {
+    margin-top: 0px;
+    margin-left: 10px;
+    height: 850px;
+    width: 1300px;
+}
+
+#registerTitle{
+    color: #ffeed3;
+}
+
+#allInputDivs {
+    height: 250px;
+    width: 960px;
+    /* sd */
+    border-color: black;
+    border-style: inset;
+    border-width: 3.1px;
+    /* other */
+    margin: 5px;
+    border-radius: 7.5px;
+    background-color: rgb(250, 221, 192);
+    float: left;
+}
+
+
+.textIn {
+    width: 290px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.namePass {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.submitButton {
+    width: 966.2px;
+    height: 50px;
+    margin-top: 15px;
+    margin: 5px;
+    position: static;
+    color: rgb(37, 0, 0);
+    background-color: #ffedda;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    border-width: 1.55px;
+    border-color: black;
+    border-style: solid;
+    transition: background-color 1s, color 1s;
+}
+
+    .submitButton:hover {
+        color: rgb(49, 0, 0);
+        background-color: rgb(244, 223, 185);
+        transition-duration: 2.7s;
+        /* transition-delay: 1s; */
+    }
+
+    .submitButton:active {
+        color: rgb(245, 222, 179);
+        background-color: rgb(37, 0, 0);
+        transition-duration: .1s;
+    }
+
+
+/* .submitButton:focus,
+.submitButton:active {
+    background-color: black;
+    transition: none;
+} */
+
+#registerTitle {
+    margin: 5px;
+    font-size: 50px;
+}
+
+#errorLog {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: transparent;
+    height: 50px;
+    width: 935px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.errorLogs {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 320px;
+    height: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+.marks {
+    float: left;
+    width: 320px;
+    height: 230px;
+    /* margin: 0px 10px 0px 0px; */
+    border-radius: 5px;
+    padding: 10px;
+    /* border-style: inset;
+    border-width: 5px;
+    border-color: rgb(0 0 0 / 0.9); */
+    transition: background-color .8s;
+}
+
+    .marks:hover {
+        background-color: rgba(255, 179, 0, 0.174);
+    }
+
+#div3 {
+    width: 260px;
+}
+
+#div4 {
+    width: 140px;
+    padding: 10px;
+    /* sd */
+    border-color: black;
+    border-style: inset;
+    border-width: 3.1px;
+    /* other */
+    margin: 5px;
+    border-radius: 7.5px;
+    background-color: rgb(128, 77, 40);
+    
+    color: rgb(251, 235, 219);
+    float: left;
+}
+
+#genderDiv {
+    margin-top: 5px;
+    width: 140px;
+    height: 107px;
+    border-radius: 5px;
+    /* border-color: black;
+    border-style: inset;
+    border-width: 3.1px;
+    background-color: rgb(240, 185, 123); */
+    transition: background-color .8s;
+}
+
+    #genderDiv:hover {
+        background-color: rgba(255, 179, 0, 0.174);
+    }

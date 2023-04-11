@@ -1,0 +1,333 @@
+﻿body {
+    /*font-family:'French Script MT';*/
+    font-family: 'Oswald';
+    background-color: rgb(137, 76, 18);
+    font-size: 20px;
+    margin: 0;
+}
+
+
+:root {
+    /*h2 font border color*/
+    --h2fbc: black;
+}
+
+h2 {
+    /*Text border*/
+    text-shadow: -1px -1px 0px var(--h2fbc), 0px -1px 0px var(--h2fbc), 1px -1px 0px var(--h2fbc), -1px 0px 0px var(--h2fbc), 1px 0px 0px var(--h2fbc), -1px 1px 0px var(--h2fbc), 0px 1px 0px var(--h2fbc), 1px 1px 0px var(--h2fbc);
+}
+
+h1 {
+    /*Text border*/
+    text-shadow: -1px -1px 0px var(--h2fbc), 0px -1px 0px var(--h2fbc), 1px -1px 0px var(--h2fbc), -1px 0px 0px var(--h2fbc), 1px 0px 0px var(--h2fbc), -1px 1px 0px var(--h2fbc), 0px 1px 0px var(--h2fbc), 1px 1px 0px var(--h2fbc);
+}
+
+li {
+    color: rgb(47, 20, 0);
+}
+
+p {
+    color: wheat;
+}
+
+a {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(79, 42, 10);
+    text-decoration:none;
+}
+
+#table {
+    background-color: rgb(255, 174, 75, 1);
+    width: 100%;
+    height: 1200px;
+}
+
+#Title {
+    font-family: 'Script MT';
+    background-color: rgb(255, 167, 45, 0.40);
+    text-align: center;
+    font-size: 30px;
+    height: 100px;
+    color: rgb(85, 49, 14);
+}
+
+#laChessTitle {
+    text-shadow: none;
+    text-align: center;
+}
+
+
+#main {
+    height: 100%;
+}
+
+#innerMain{
+    position: absolute;
+}
+
+.main-backgrounfimaeg {
+    background-image: url('media/borwnbackgrpund.jpg');
+    background-color: rgb(97, 28, a9);
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(0px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+
+.localTitle {
+    margin-left:7px;
+    font-size: 60px;
+    color: rgb(85, 47, 7);
+}
+
+.contet {
+    word-wrap: break-word;
+    margin: 60px;
+    margin-right: 400px
+}
+
+.pfp{
+
+    margin: 20px;
+    float: left;
+    width: 300px;
+}
+
+#sideBar2 {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(118 39 28);
+/*    background-color: rgb(246, 134, 61, 0.40);
+*/}
+
+.chessFact {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(185, 100, 62);
+/*    background-color: rgb(85, 49, 14);
+*/    /*
+    background-color: rgb(230 142 19 / 0.40);*/
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.chessFactText {
+}
+
+.chessFact :hover {
+    transition: .2s;
+    background-color: rgb(230 142 19 / 0.50);
+}
+
+#bottomText {
+    background-color: rgb(80, 28, 1); /*
+    background-color: rgb(255, 137, 36, 0.40);
+*/
+    color: wheat;
+    height: 100px;
+    padding-left: 12px;
+}
+
+.bottomTextLink {
+    color: rgb(249, 231, 186);
+}
+/*---------players pages---------*/
+.localTitle {
+    color: antiquewhite;
+}
+
+.contet {
+    color: rgb(242, 224, 204);
+}
+
+.logo{
+    height: 200px;
+}
+
+
+#mainDiv{
+    height: 100%;
+}
+
+
+
+
+
+
+
+/*--------------board--------------*/
+/*--------------board--------------*/
+/*--------------board--------------*/
+#log {
+    position: absolute;
+}
+
+#trainButton {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 61, 94);
+}
+
+
+/*-------------Pices-------------*/
+
+.boards {
+    width: 800px;
+    height: 800px;
+    background-color: transparent;
+    margin: 35px;
+    margin-top: 40px;
+    float: left;
+    background-image: url("chessBoard/pictures/chessBackgraond.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1.2%;
+}
+
+.pice {
+    width: 12.5%;
+    height: 12.5%;
+    background-color: transparent;
+    position: relative;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+
+#end {
+    width: 0px;
+    height: 12.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    -----
+*/
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    margin-right:0px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(235, 188, 131, 0.00);
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(79, 42, 10);
+    text-decoration: none;
+    font-family: 'Oswald';
+    margin-right: -22px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+#sideBar1 {
+    width: 260px;
+    height: 100%;
+    background-color: rgb(255, 137, 36, 0.40);
+}
+
+
+
+#menuClick {
+    width: 100%;
+    margin: 0px;
+    height: 250px;
+    padding: 12px;
+}
+
+#menuClick a{
+    width: 100%;
+    margin: 12px;
+}
+
+#menuDropDown {
+    margin: 0px;
+    background-color: lightcoral;
+    height: 60px;
+}
+
+
+#menu {
+}
+
+#menu a {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    width: auto;
+    padding-left: 12px; /*
+    background-color:rgb(255, 174, 75, 0.65)*/
+    float:left;
+}
+
+        #menu a:hover {
+            background-color: rgb(255, 128, 105, 0.51);
+        }
