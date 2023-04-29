@@ -1,15 +1,9 @@
-function sleep(ms) {
+﻿function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 
 var lastCords;
-
-let mainBoard = new Board("mainBoard", "freePlay")
-
-creatHTMLboardForBoard("mainBoard")
-
-PrintBoard(mainBoard, true)
 
 
 
@@ -32,11 +26,11 @@ PrintBoard(mainBoard, true)
 //-----------------------------------------------------------------////-----------------------------------------------------------------////-----------------------------------------------------------------//
 //-----------------------------------------------------------------////-----------------------------------------------------------------////-----------------------------------------------------------------//
 
-/*let bestNetwork = new NeuralNetwork([320, 1000, 2500, 1000, 128]);
+let bestNetwork = new NeuralNetwork([320, 1000, 2500, 1000, 128]);
 
 
 function train(n, learnRate) {
     for (n; n > 0; n--) {
         bestNetwork = networkGame(mainBoard, bestNetwork, NeuralNetwork.mutate(bestNetwork, learnRate))
     }
-}*/
+}

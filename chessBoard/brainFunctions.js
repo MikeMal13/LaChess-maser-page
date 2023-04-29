@@ -1,15 +1,4 @@
-function brainToString(brain) {
-
-    let str;
-
-    brain.levels.forEach(level => {
-        level.biases
-    });
-
-    return str
-}
-
-function networkGame(board, network1, network2) {
+﻿function networkGame(board, network1, network2) {
     for (let i = 0; i < 1000; i++) {
 
         console.log(i);

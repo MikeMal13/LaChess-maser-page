@@ -3,7 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
+    <link href="playersCss.css" rel="stylesheet" />
     <p class="localTitle">Magnus Carelson</p>
 
     <img src="../../Media/6e55c3d9f2f6ca1d4383687850784dc8.jpg" class="pfp"/>

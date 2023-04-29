@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace LaChess_maser_page.Pages.openings
+namespace LaChess_maser_page.Pages.other
 {
-    public partial class italian_game : System.Web.UI.Page
+    public partial class gallery : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -67,38 +67,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\Users.mdf" />
+    <Content Include="App_Data\Users_log.ldf">
+      <DependentUpon>Users.mdf</DependentUpon>
     </Content>
-    <Content Include="Media\borwnBackgrpund.jpg" />
-    <Content Include="Media\DALL·E 2023-03-29 11.34.11 - a fortune-telling chess pawn reading your fate in the giant crop of the black king, digital art.png" />
-    <Content Include="Media\LaChessLogoNoBackground.png" />
-    <Content Include="Media\laChessLogoSimplenoBackground.png" />
-    <Content Include="Media\NATI_a_left_angeled_phtot_of_Lorem_Ipsum_playing_romeninan_ches_d27ba365-6e30-45a3-880d-dd902029fec0.png" />
+    <Content Include="chessBoard\piceMovement.js" />
+    <Content Include="chessBoard\PinsAndChecks.js" />
+    <Content Include="chessBoard\printBoard.js" />
+    <Content Include="chessBoard\main.js" />
+    <Content Include="chessBoard\getMove.js" />
+    <Content Include="chessBoard\gameClass.js" />
+    <Content Include="chessBoard\else.js" />
+    <Content Include="chessBoard\brainFunctions.js" />
+    <Content Include="chessBoard\brain.js" />
+    <Content Include="chessBoard\creatBoard.js" />
+    <Content Include="Media\bakground\borwnBackgrpund.jpg" />
+    <Content Include="Media\z_garbge\DALL·E 2023-03-29 11.34.11 - a fortune-telling chess pawn reading your fate in the giant crop of the black king, digital art.png" />
+    <Content Include="Media\Logos\LaChessLogoNoBackground.png" />
+    <Content Include="Media\Logos\laChessLogoSimplenoBackground.png" />
+    <Content Include="Media\players\Lorem_Ispom.jpeg" />
+    <Content Include="Pages\board\EditingBoard.aspx" />
+    <Content Include="Pages\board\Pazzles.aspx" />
+    <Content Include="Pages\login\Disconnect.aspx" />
     <Content Include="Pages\login\loging.js" />
     <Content Include="Pages\login\login.css" />
     <Content Include="Pages\login\Register.js" />
-    <Content Include="Media\-1x-1.jpg" />
-    <Content Include="Media\6e55c3d9f2f6ca1d4383687850784dc8.jpg" />
-    <Content Include="Media\GettyImages-52841903.0.jpg" />
-    <Content Include="Media\LaChessLogo.png" />
-    <Content Include="Media\phphW0e0t.jpeg" />
+    <Content Include="Media\players\Hikaru.jpeg" />
+    <Content Include="Media\players\Magnos.jpg" />
+    <Content Include="Media\players\Kaskarove.jpg" />
+    <Content Include="Media\Logos\LaChessLogo.png" />
+    <Content Include="Media\players\Ding.jpeg" />
     <Content Include="Pages\login\style.css" />
     <Content Include="Pages\login\forgotPassword.aspx" />
-    <Content Include="Pages\openings\italian game.aspx" />
+    <Content Include="Pages\other\gallery.aspx" />
+    <Content Include="Pages\other\Test.aspx" />
     <Content Include="Pages\players\Lorem Ipsum.aspx" />
     <Content Include="Pages\players\Hikaru Nakamura.aspx" />
     <Content Include="Pages\login\Login.aspx" />
     <Content Include="Pages\players\Magnus Carelson.aspx" />
     <Content Include="Pages\players\Gary Kaskarov.aspx" />
-    <Content Include="chessBoard\brain.js" />
-    <Content Include="chessBoard\brainFunctions.js" />
-    <Content Include="chessBoard\creatBoard.js" />
-    <Content Include="chessBoard\else.js" />
-    <Content Include="chessBoard\getMove.js" />
-    <Content Include="chessBoard\main.js" />
-    <Content Include="chessBoard\piceMovement.js" />
     <Content Include="chessBoard\pictures\bakeround.png" />
     <Content Include="chessBoard\pictures\bb.png" />
     <Content Include="chessBoard\pictures\bk.png" />
@@ -116,10 +123,9 @@
     <Content Include="chessBoard\pictures\wp.png" />
     <Content Include="chessBoard\pictures\wq.png" />
     <Content Include="chessBoard\pictures\wr.png" />
-    <Content Include="chessBoard\PinsAndChecks.js" />
-    <Content Include="chessBoard\printBoard.js" />
-    <Content Include="Media\bobby-fischer-gettyimages-495892222.jpg" />
+    <Content Include="Media\players\bobby_fischer.jpg" />
     <Content Include="Pages\board\PlayBoard.aspx" />
+    <Content Include="Pages\players\playersCss.css" />
     <Content Include="Pages\Settings\Settings.aspx" />
     <Content Include="Pages\login\Register.aspx" />
     <Content Include="StyleSheet1.css" />
@@ -129,6 +135,27 @@
     <Content Include="Pages\players\Ding Liren.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\board\Pazzles.aspx.cs">
+      <DependentUpon>Pazzles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\board\Pazzles.aspx.designer.cs">
+      <DependentUpon>Pazzles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\board\PlayBoard - Copy.aspx.cs">
+      <DependentUpon>EditingBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\board\PlayBoard - Copy.aspx.designer.cs">
+      <DependentUpon>EditingBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\login\Disconnect.aspx.cs">
+      <DependentUpon>Disconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\login\Disconnect.aspx.designer.cs">
+      <DependentUpon>Disconnect.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\login\forgotPassword.aspx.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,12 +163,19 @@
     <Compile Include="Pages\login\forgotPassword.aspx.designer.cs">
       <DependentUpon>forgotPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\openings\italian game.aspx.cs">
-      <DependentUpon>italian game.aspx</DependentUpon>
+    <Compile Include="Pages\other\gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\openings\italian game.aspx.designer.cs">
-      <DependentUpon>italian game.aspx</DependentUpon>
+    <Compile Include="Pages\other\gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\other\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\other\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\players\Lorem Ipsum.aspx.cs">
       <DependentUpon>Lorem Ipsum.aspx</DependentUpon>
@@ -240,6 +274,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

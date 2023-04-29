@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaChess_maser_page.Pages.openings
+namespace LaChess_maser_page.Pages.other
 {
 
 
-    public partial class italian_game
+    public partial class gallery
     {
     }
 }

@@ -1,9 +1,9 @@
-function PrintBoard(board, routate) {
+﻿function PrintBoard(board, routate) {
 
     if (routate) {
 
         for (let y = 0; y < 4; y++) {
-            for (let x = 0; x < 8; x++) { 
+            for (let x = 0; x < 8; x++) {
 
                 swapNodes(
                     document.getElementById(x.toString() + y.toString() + "_" + board.boardName),
@@ -16,11 +16,7 @@ function PrintBoard(board, routate) {
     for (let x = 0; x < 8; x++) {
         for (let y = 0; y < 8; y++) {
 
-            console.log(document.getElementById(x.toString() + y.toString() + "_" + board.boardName));
-
-            //document.getElementById(x.toString() + y.toString() + "_" + board.boardName).src = "../../Media/6e55c3d9f2f6ca1d4383687850784dc8.jpg";
-
-            document.getElementById(x.toString() + y.toString() + "_" + board.boardName).src = "/chessBoard/pictures/" + board.pices[y][x] + ".png";
+            document.getElementById(x.toString() + y.toString() + "_" + board.boardName).src = "../../chessBoard/pictures/" + board.pices[y][x] + ".png";
             document.getElementById(x.toString() + y.toString() + "_" + board.boardName).style.backgroundColor = "transparent";
         }
     }

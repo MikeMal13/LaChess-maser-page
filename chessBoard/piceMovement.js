@@ -1,4 +1,4 @@
-function pawn_possiboleMoves(board, startCords) {
+﻿function pawn_possiboleMoves(board, startCords) {
 
     let possiboleMoves = [];
 
@@ -36,7 +36,7 @@ function pawn_possiboleMoves(board, startCords) {
         }
 
         if (findInBoard(board, new Cords(startCords.x - 1, startCords.y - 1), startCords)[0] == "w") {
-            possiboleMoves.push(board, new Cords(startCords.x - 1, startCords.y - 1));
+            possiboleMoves.push(new Cords(startCords.x - 1, startCords.y - 1));
         }
     }
 

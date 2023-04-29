@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <link href="playersCss.css" rel="stylesheet" />
     <p class="localTitle">Gary Kaskarov</p>
     <img src="../../Media/GettyImages-52841903.0.jpg" class="pfp"/>
     <p class="contet">

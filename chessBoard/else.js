@@ -1,4 +1,4 @@
-function findAllMovesPerPice(board, turn) {
+﻿function findAllMovesPerPice(board, turn) {
 
     let kingIsAlive = false;
     let moves = [];
@@ -46,7 +46,7 @@ function playRrandomovesToBoards(name_s, name_e, boardsCount) {
 
         board.turn = board.turn == "w" ? "b" : "w"
 
-        PrintBoard(board, false)
+        PrintBoard(board, true)
     }
 
     window.requestAnimationFrame(playRrandomovesToBoards)

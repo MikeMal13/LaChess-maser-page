@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <link href="playersCss.css" rel="stylesheet" />
     <p class="localTitle">Lorem Ipsum</p>
-    <img class="pfp" src="../../Media/NATI_a_left_angeled_phtot_of_Lorem_Ipsum_playing_romeninan_ches_d27ba365-6e30-45a3-880d-dd902029fec0.png" />
-
+    <img src="../../Media/players/Lorem_Ispom.jpeg" class="pfp" />
     <p class="contet">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at sem odio. Maecenas quis mattis ligula, in imperdiet libero. Sed augue ex, mollis vitae erat at, viverra mollis sem. Fusce massa velit, blandit et feugiat ac, scelerisque nec ante. Aenean laoreet leo ac purus placerat, nec porta quam consequat. Donec in est hendrerit, auctor urna vitae, gravida arcu. Pellentesque fermentum elit eget vulputate facilisis. Morbi fringilla sed massa sit amet scelerisque. Nulla tristique elit vitae augue pulvinar, id mattis diam porta. Cras fringilla a risus a dictum. Aenean mi augue, convallis eu lorem ac, molestie tempus lacus. Cras convallis, lectus ac congue rhoncus, risus velit egestas leo, vitae faucibus ligula diam sed tellus.
 

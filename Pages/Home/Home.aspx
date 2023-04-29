@@ -11,7 +11,7 @@
         </p>
         <p id="secendText">until then you can enjoy the artivals I stool from wikipedia or play on the chess board i made (i even madr the board background, it looks realy cooly and i fucjikng love it)</p>
 
-        <img class="logo" src="../../Media/LaChessLogoNoBackground.png" />
+        <img class="logo" src="../../Media/Logos/LaChessLogoNoBackground.png" />
    
         </div>
     <style>

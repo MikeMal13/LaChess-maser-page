@@ -37,8 +37,8 @@ function check1(jumpNull) {
     }
 
     if (!jumpNull || password2 != '') {
-        if (password2.length == 0) return 5
-        if (password2 != password1) return 6
+        if (password2.length == 0) return 7
+        if (password2 != password1) return 8
     }
 
     return true;

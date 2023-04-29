@@ -1,4 +1,4 @@
-function findIfPinedInDirection(board, oppositeColor, startCords, x, y) {
+﻿function findIfPinedInDirection(board, oppositeColor, startCords, x, y) {
 
     let cords = cordsPluseMinus(x, y, new Cords(startCords.x, startCords.y));
 
@@ -194,10 +194,14 @@ function findIfCheckedInDirection(board, color, kingCord, x, y) {
     cord = cordsPluseMinus(x, y, new Cords(kingCord.x, kingCord.y))
 
     if (x != " " && y != " " && findInBoard(board, cord) == ((color == "w" ? "b" : "w") + "p") && ((color == "w" && y == "+") || (color == "b" && y == "-"))) {
+        console.log("what the fuck? ")
+        console.log(cord);
         return cord;
     }
 
     if (isCordsValid(board, cord) && board.pices[cord.y][cord.x] == ((color == "w" ? "b" : "w") + "k")) {
+        console.log("what the fuck? 2")
+        console.log(cord);
         return cord;
     }
 
@@ -206,7 +210,7 @@ function findIfCheckedInDirection(board, color, kingCord, x, y) {
 
         if (board.pices[cord.y][cord.x] != "nn") {
 
-            if (board.pices[cord.y][cord.x][0] == color) return false;
+            if (board.pices[cord.y][cord.x][0] == color && board.pices[cord.y][cord.x][1] != 'k') return false;
 
             if (board.pices[cord.y][cord.x][1] == "q") return cord;
 

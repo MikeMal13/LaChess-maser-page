@@ -29,15 +29,17 @@ namespace LaChess_maser_page.Pages
                 String livingArea = Request.Form["livingArea"];
 
 
-                string fileLocetion = @"C:\Users\micha\OneDrive\Desktop\dbo.Table.sql";
+                string fileLocetion = @"C:\Users\micha\Desktop\dbo.Table.sql";
 
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + fileLocetion + ";Integrated Security=True";
+                con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";    
                 con.Open();
+                Random r = new Random();
 
-                string s = "insert into Users(name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
-                               "values('" + name + "','" + pass + "','" + 
+
+                string s = "insert into Users(Id,name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
+                               "values('" + r.Next(0, int.MaxValue) + "','" + name + "','" + pass + "','" + 
                                mail + "','" + gender + "','" + time1 + "','" + 
                                time2 + "','" + time3 + "','" + time4 + "','" + 
                                time5 + "','" + birthday + "','" + livingArea + 
@@ -51,14 +53,14 @@ namespace LaChess_maser_page.Pages
                 SqlCommand cmd2 = new SqlCommand();
                 cmd2.Connection = con;
                 cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "SELECT id from users WHERE name='" + name + "'AND pwd='" + pass + "'";
+                cmd2.CommandText = "SELECT id from users WHERE name='" + name + "'AND password='" + pass + "'";
                 object obj = cmd2.ExecuteScalar();
                 con.Close();
 
                 if (obj != null)
                 {
                     Session["name"] = name;
-                    Response.Redirect("home.aspx");
+                    Response.Redirect("../Home/Home.aspx");
                 }
 
             }

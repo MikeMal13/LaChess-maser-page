@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <link href="playersCss.css" rel="stylesheet" />
     <p class="localTitle">Ding Liren</p>
-
     <img src="../../Media/phphW0e0t.jpeg" class="pfp"/>
 
     <p class="contet">

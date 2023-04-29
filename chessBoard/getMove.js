@@ -1,4 +1,4 @@
-class Cords {
+﻿class Cords {
     constructor(x, y) {
 
         this.x = x;
@@ -22,6 +22,8 @@ function piceIsClicked(board, x, y) {
         }
 
         PrintBoard(board, false);
+        onMove()//does nafhing anless redifend on HTML
+
 
         return;
     }
@@ -41,9 +43,14 @@ function piceIsClicked(board, x, y) {
     PrintBoard(board, false)
 }
 
+function onMove() {
+    //this sepost to be remad aoutside and created to find whne a move has been made
+    //i have no purepus here
+}
+
 function resatPSMoves(board) {
 
-    board.lastCords = undefined;
+    lastCords = undefined;
     board.possiboleMoves = [];
     return;
 }

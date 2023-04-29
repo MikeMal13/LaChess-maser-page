@@ -1,0 +1,27 @@
+﻿#mainDiv{
+    padding: 0px;
+}
+
+.text {
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
+    position:page;
+    background-color: rgb(0, 0, 0, 0.50);
+    color: wheat;
+    padding: 12px;
+    transition: height 0.5s;
+    border-radius: 10px;
+}
+
+    .text:hover {
+        overflow: scroll;
+        white-space: normal;
+        height: 500px;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+.pfp {
+    width: 20%;
+    margin: 0px;
+}

@@ -3,10 +3,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
+    <link href="playersCss.css" rel="stylesheet" />
     <p class="localTitle">Hikaru Nakamura</p>
-
-    <img src="../../Media/-1x-1.jpg" class="pfp" />
+    
+    <img src="../../Media/players/Hikaru.jpeg" class="pfp" />
 
     <p class="contet">
         In July 2002, Nakamura achieved 56th place at the 30th annual World Open tournament in Philadelphia

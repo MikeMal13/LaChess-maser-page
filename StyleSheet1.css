@@ -67,19 +67,17 @@ a {
 }
 
 .main-backgrounfimaeg {
-    background-image: url('media/borwnbackgrpund.jpg');
-    background-color: rgb(97, 28, a9);
+    background-image: url('media/bakground/borwnbackgrpund.jpg');
+    background-color: rgb(97, 28, 9);
     /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(0px);
     /* Full height */
-    height: 100%;
+    height: 23%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 30px;
-    margin-top: 20px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 
@@ -98,12 +96,7 @@ a {
     margin-right: 400px
 }
 
-.pfp{
 
-    margin: 20px;
-    float: left;
-    width: 300px;
-}
 
 #sideBar2 {
     width: 200px;
@@ -159,6 +152,7 @@ a {
 
 #mainDiv{
     height: 100%;
+    padding:12px;
 }
 
 
@@ -234,23 +228,32 @@ a {
 
 /* Dropdown Button */
 .dropbtn {
-    margin-right:0px;
-    border-radius: 5px;
     font-size: 20px;
-    border: none;
-    background-color: rgb(235, 188, 131, 0.00);
+    background-color: rgb(255, 241, 224);
     font-size: 23px;
     font-weight: bold;
-    color: rgb(79, 42, 10);
-    text-decoration: none;
+    color: rgb(9, 42, 10);
     font-family: 'Oswald';
-    margin-right: -22px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 49%;
+    padding: 0px;
+    border-color: black;
+    border-width: 12px;
+    background-color: #f1f1f1;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
+    z-index: 1;
+    height: 60px;
+    border-radius: 5px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -263,7 +266,7 @@ a {
     z-index: 1;
 }
 
-    /* Links inside the dropdown */
+    /*Links inside the dropdown */
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -271,20 +274,22 @@ a {
         display: block;
     }
 
-        /* Change color of dropdown links on hover */
+         /*Change color of dropdown links on hover */
         .dropdown-content a:hover {
             background-color: #ddd;
         }
 
-/* Show the dropdown menu on hover */
+/*Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/*Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #efa37d;
 }
+
+
 
 
 
@@ -292,6 +297,7 @@ a {
     width: 260px;
     height: 100%;
     background-color: rgb(255, 137, 36, 0.40);
+    padding: 0px;
 }
 
 
@@ -310,24 +316,22 @@ a {
 
 #menuDropDown {
     margin: 0px;
-    background-color: lightcoral;
-    height: 60px;
 }
 
 
 #menu {
 }
 
-#menu a {
+#menuClick a {
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
     width: auto;
     padding-left: 12px; /*
     background-color:rgb(255, 174, 75, 0.65)*/
-    float:left;
+    float: left;
 }
 
-        #menu a:hover {
+        #menuClick a:hover {
             background-color: rgb(255, 128, 105, 0.51);
         }
