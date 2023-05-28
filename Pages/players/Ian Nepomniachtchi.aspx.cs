@@ -9,7 +9,7 @@ namespace LaChess_maser_page
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        protected void Page_Load3435(object sender, EventArgs e)
+        protected void Page_Load324(object sender, EventArgs e)
         {
 
         }

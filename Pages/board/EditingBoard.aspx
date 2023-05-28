@@ -26,7 +26,7 @@
 
     <script>
         var lastCords;
-        var mainBoard = new Board("mainBoard", "edit")
+        var mainBoard = new Board("mainBoard", "freePlay")
         creatHTMLboardForBoard("mainBoard")
         PrintBoard(mainBoard, true)
 

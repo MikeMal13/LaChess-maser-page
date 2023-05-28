@@ -82,6 +82,20 @@
     <Content Include="chessBoard\brain.js" />
     <Content Include="chessBoard\creatBoard.js" />
     <Content Include="Media\bakground\borwnBackgrpund.jpg" />
+    <Content Include="Media\players\Alexander Grischuk.jpg" />
+    <Content Include="Media\players\Alireza Firouzja.jpg" />
+    <Content Include="Media\players\Anish Giri.jpeg" />
+    <Content Include="Media\players\Fabiano Caruana.jpg" />
+    <Content Include="Media\players\Ian Nepomniachtchi.jpg" />
+    <Content Include="Media\players\Leinier Dominguez Perez.jpeg" />
+    <Content Include="Media\players\Levon Aronian.png" />
+    <Content Include="Media\players\Maxime Vachier-Lagrave.jpg" />
+    <Content Include="Media\players\Parham Maghsoodloo.jpeg" />
+    <Content Include="Media\players\Sergey Karjakin.png" />
+    <Content Include="Media\players\Shakhriyar Mamedyarov.jpeg" />
+    <Content Include="Media\players\Teimour Radjabov.jpeg" />
+    <Content Include="Media\players\Viswanathan Anand.jpg" />
+    <Content Include="Media\players\Wesley So.jpg" />
     <Content Include="Media\z_garbge\DALL·E 2023-03-29 11.34.11 - a fortune-telling chess pawn reading your fate in the giant crop of the black king, digital art.png" />
     <Content Include="Media\Logos\LaChessLogoNoBackground.png" />
     <Content Include="Media\Logos\laChessLogoSimplenoBackground.png" />
@@ -104,6 +118,8 @@
     <Content Include="Pages\players\Lorem Ipsum.aspx" />
     <Content Include="Pages\players\Hikaru Nakamura.aspx" />
     <Content Include="Pages\login\Login.aspx" />
+    <Content Include="Pages\players\Alireza Firouzja.aspx" />
+    <Content Include="Pages\players\Ian Nepomniachtchi.aspx" />
     <Content Include="Pages\players\Magnus Carelson.aspx" />
     <Content Include="Pages\players\Gary Kaskarov.aspx" />
     <Content Include="chessBoard\pictures\bakeround.png" />
@@ -128,6 +144,8 @@
     <Content Include="Pages\players\playersCss.css" />
     <Content Include="Pages\Settings\Settings.aspx" />
     <Content Include="Pages\login\Register.aspx" />
+    <Content Include="Players.js" />
+    <Content Include="searchBar.css" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Pages\players\Bodbby Fischer.aspx" />
@@ -198,6 +216,20 @@
     <Compile Include="Pages\login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\players\Alireza Firouzja.aspx.cs">
+      <DependentUpon>Alireza Firouzja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Alireza Firouzja.aspx.designer.cs">
+      <DependentUpon>Alireza Firouzja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Ian Nepomniachtchi.aspx.cs">
+      <DependentUpon>Ian Nepomniachtchi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Ian Nepomniachtchi.aspx.designer.cs">
+      <DependentUpon>Ian Nepomniachtchi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\players\Magnus Carelson.aspx.cs">
       <DependentUpon>Magnus Carelson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -265,6 +297,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Media\players\Richard Rapport.jpg" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">

@@ -1,0 +1,133 @@
+﻿#menuSearchBar {
+    margin-bottom: 21px;
+    width: calc(100% - 475px);
+    height: 30px;
+}
+
+#main_serch_bar {
+    height: 30px;
+    width:100%;
+    min-width: 600px;
+    border-radius: 10px;
+    background-color: rgb(252, 195, 115);
+    font-size: 24px;
+    margin-top: -30px;
+    /*margin-bottom: 30px;*/
+    text-align: center;
+}
+
+    #main_serch_bar:focus {
+        background-color: rgb(255, 174, 86);
+    }
+
+        #main_serch_bar:focus .searchBar-content {
+            background-color: rgb(255, 174, 86);
+        }
+
+
+.searchBar-content div {
+}
+
+.searchDiv {
+    width: 100%;
+}
+
+
+
+
+
+
+.main_serch_bar {
+    font-size: 20px;
+    background-color: rgb(255, 241, 224);
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(9, 42, 10);
+    font-family: 'Oswald';
+    border-radius: 5px;
+}
+
+
+
+
+.searchBar {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+}
+
+
+.searchBar-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    z-index: 1;
+    width: 100%;
+}
+
+#menuSearchBar:hover .searchBar-content {
+    display: block;
+}
+
+#main_serch_bar:focus .searchBar-content {
+    display: block;
+}
+
+
+.searchDiv {
+    display: inline-block;
+    border-color: black;
+    border-style: groove;
+    border-width: 0px;
+    border-bottom-width: 3px;
+    /**/
+    margin: -5px;
+    padding: 0;
+    /**/
+    overflow: hidden;
+    height: 200px;
+    transition-property: height;
+    transition-duration: .5s;
+}
+
+    .searchDiv:hover {
+        transition-delay: 2s;
+        background-color: rgb(0, 0, 40, 0.13);
+        height: 500px;
+        transition: height .5s;
+    }
+
+
+
+#sherchContent {
+    overflow-y: scroll;
+    max-height: 700px;
+}
+
+
+.searchBar_image {
+    height: 300px;
+    width: 300px;
+    float: left;
+    object-fit: cover;
+    overflow: hidden;
+    transition: height .5s, width .5s;
+}
+
+.searchDiv:hover .searchBar_image {
+    height: 500px;
+    width: 300px;
+}
+
+.searchBar-text {
+    color: rgb(72, 23, 0);
+    font-family: 'Oswald';
+    font-size:22px;
+}
+
+.searchBar-name {
+    font-size: 40px;
+    font-family: 'Oswald';
+}

@@ -13,7 +13,12 @@
 
     <link href="StyleSheet1.css" rel="stylesheet" />
     <link href="customeDropDown.css" rel="stylesheet" />
-    <script src="customeDropDown.js"></script>
+    <script src="../../customeDropDown.js"></script>
+
+
+    <link href="searchBar.css" rel="stylesheet" />
+    <script src="../../Players.js"></script> <!-- search bar -->
+
 
     <%laChess.Class1.feeling = 'e'; %>
    
@@ -46,9 +51,25 @@
                 <tr>
                     <td colspan="2" id="Title">
                         <div id="TitleDiv">
-                            <img class="logo" style="margin-top:20px;" src="../../Media/Logos/LaChessLogoNoBackground.png" />
-
+                            <!--img class="logo" style="margin-top:20px;" src="../../Media/Logos/LaChessLogoNoBackground.png" />
+                            -->
                             <h1 id="laChessTitle">LaChess</h1>
+
+
+                            
+                            <div id="menuSearchBar" class="searchBar">
+                                <input type="text" id="main_serch_bar" class="main_serch_bar" placeholder="search data base" oninput="displayResolt()" onclick="displayResolt()"/>
+
+
+                                <div id="sherchContent" class="searchBar-content" style="" >
+                                    <!-- dinamic from players.js -->
+                                </div> 
+                            </div>
+
+                            <script>
+                                displayResolt();
+                            </script>
+
                         </div>
                     </td>
                 </tr>
@@ -107,7 +128,6 @@
 
 
                                 #te{
-                                    background-color: red;
                                 }
 
                             </style>
@@ -139,25 +159,9 @@
                               <%if (Session["name"] != null){  %>
                                 <div class="DobuleLinks">
                                     <div><a href="../Settings/Settings.aspx">Settings</a></div>
-                                    <div><a href="../login/Disconnect.aspx">Log out</a></div>
                                 </div>
                                 <%} %>
 
-                            </div>
-
-
-                            <div id="menuDropDown">
-                                <div class="dropdown">
-                                    <button class="dropbtn">Players</button>
-                                    <div class="dropdown-content">
-                                        <a href="../players/Bodbby%20Fischer.aspx">Bodbby Fischer</a>
-                                        <a href="../players/Gary%20Kaskarov.aspx">Gary Kaskarov</a>
-                                        <a href="../players/Hikaru%20Nakamura.aspx">Hikaru Nakamura</a>
-                                        <a href="../players/Magnus%20Carelson.aspx">Magnus Carelson</a>
-                                        <a href="../players/Ding%20Liren.aspx">Ding Liren</a>
-                                        <a href="../players/Lorem%20Ipsum.aspx">Lorem Ipsum</a>
-                                    </div> 
-                                </div>
                             </div>
                         </div>
                     </td>

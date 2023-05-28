@@ -10,6 +10,7 @@
 :root {
     /*h2 font border color*/
     --h2fbc: black;
+    --sideBar2_Width: 200px;
 }
 
 h2 {
@@ -60,22 +61,21 @@ a {
 
 #main {
     height: 100%;
+    padding: 0px;
 }
 
 #innerMain{
     position: absolute;
 }
 
-.main-backgrounfimaeg {
+#mainDiv {
     background-image: url('media/bakground/borwnbackgrpund.jpg');
     background-color: rgb(97, 28, 9);
-    /* Add the blur effect */
-    /* Full height */
-    height: 23%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    display: inline-table;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -99,11 +99,12 @@ a {
 
 
 #sideBar2 {
-    width: 200px;
+    width: var(--sideBar2_Width);
     height: 300px;
     background-color: rgb(118 39 28);
-/*    background-color: rgb(246, 134, 61, 0.40);
-*/}
+    /*    background-color: rgb(246, 134, 61, 0.40);
+*/
+}
 
 .chessFact {
     margin: 5px;

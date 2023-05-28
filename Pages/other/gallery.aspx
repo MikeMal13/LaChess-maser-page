@@ -17,20 +17,19 @@
         <br />
         <br />
    
-        <img name="pic" src="../../Media/phphW0e0t.jpeg" width="60%" alt="pic" onload="Timer()" />
+        <img name="pic" src="../../Media/players/bobby_fischer.jpg" width="60%" alt="pic" onload="Timer()" />
     </div>
-
     <script>
         var index = 1;
         var a;
         var pics = [
-            "../../Media/-1x-1.jpg",
-            "../../Media/6e55c3d9f2f6ca1d4383687850784dc8.jpg",
-            "../../Media/bobby-fischer-gettyimages-495892222.jpg",
-            "../../Media/DALL·E%202023-03-29%2011.34.11%20-%20a%20fortune-telling%20chess%20pawn%20reading%20your%20fate%20in%20the%20giant%20crop%20of%20the%20black%20king,%20digital%20art.png",
-            "../../Media/GettyImages-52841903.0.jpg",
-            "../../Media/NATI_a_left_angeled_phtot_of_Lorem_Ipsum_playing_romeninan_ches_d27ba365-6e30-45a3-880d-dd902029fec0.png",
-            "../../Media/phphW0e0t.jpeg"
+            "../../Media/players/bobby_fischer.jpg",
+            "../../Media/players/Ding.jpg",
+            "../../Media/players/Hikaru.jpg",
+            "../../Media/players/Kaskarove.jpg",
+            "../../Media/players/Lorem_Ispom.jpg",
+            "../../Media/players/Magnos.jpg",
+            "../../Media/Logos/LaChessLogo.png"
         ]
 
         function Timer() {
