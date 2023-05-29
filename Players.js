@@ -62,8 +62,8 @@ function displayResolt() {
          \
             <div class='searchBar-text-div'> \
                 <h1 class='searchBar-name'>"+ ensers[i][1] + "</h1> \
-               "+//<p class='searchBar-text'>"+ ensers[i][4] + "</p>\
-            "</div> \
+               "+"<p class='searchBar-text'>"+ ensers[i][4] + "</p>\
+            </div> \
          </div>"
     }
     

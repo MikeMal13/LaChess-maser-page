@@ -29,16 +29,13 @@ namespace LaChess_maser_page.Pages
                 String livingArea = Request.Form["livingArea"];
 
 
-                string fileLocetion = @"C:\Users\micha\Desktop\dbo.Table.sql";
-
-
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";    
                 con.Open();
                 Random r = new Random();
 
 
-                string s = "insert into Users(Id,name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
+                string s = "insert into Users(Id, name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
                                "values('" + r.Next(0, int.MaxValue) + "','" + name + "','" + pass + "','" + 
                                mail + "','" + gender + "','" + time1 + "','" + 
                                time2 + "','" + time3 + "','" + time4 + "','" + 
@@ -59,6 +56,7 @@ namespace LaChess_maser_page.Pages
 
                 if (obj != null)
                 {
+                    Session["id"] = obj;
                     Session["name"] = name;
                     Response.Redirect("../Home/Home.aspx");
                 }
