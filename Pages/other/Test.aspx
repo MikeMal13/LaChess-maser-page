@@ -5,30 +5,22 @@
 <table border="1" width="80%" style="background-color:none;">
         <tr>
             <td class="questen-box">
-                <p class="questen">DND's most schosen race?</p>
-                <input type="radio" name="q1" value="Human" id="Human">
-                <label>Human</label><br>
-                <input type="radio" name="q1" value="Elf" id="Elf">
-                <label>Elf</label><br>
-                <input type="radio" name="q1" value="Dragonborn" id="Dragonborn">
-                <label>Dragonborn</label><br>
+                <img class="puzzle-img" src="../../Media/puzzles/puzzel-600.png" />
+                <input type="text" name="q1" class="questen-input"/>
+
             </td>
         </tr>
         
         <tr>
             <td class="questen-box">
-                <p class="questen">DND's highest cr ranked creature?</p>
-                <input type="radio" name="q2" value="kraken" id="kraken">
-                <label>kraken</label><br>
-                <input type="radio" name="q2" value="Tyamat" id="Tyamat">
-                <label>Tyamat</label><br>
-                <input type="radio" name="q2" value="Baba Yaga" id="Baba Yaga">
-                <label>Baba Yaga</label><br>
+                <img class="puzzle-img" src="../../Media/puzzles/puzzle-300.Rxe8+.png" />
+                <input type="text" name="q2" class="questen-input"/>
+
             </td>
         </tr>
         <tr>
             <td class="questen-box">
-                <p class="questen">Who is the DM in the most popular DND series Critical Role?</p>
+                <img src="../../Media/puzzles/puzzle+0.Be5.png" />
                 <input type="radio" name="q3" value="Matt Mercer" id="Matt Mercer">
                 <label>Matt Mercer</label><br>
                 <input type="radio" name="q3" value="Jotaro Jostar" id="Jotaro Joestar">
@@ -39,24 +31,22 @@
         </tr>
         <tr>
             <td class="questen-box">
-                <p class="questen">What is the name of the animated series of based on Critical Role?</p>
-                <input type="radio" name="q4" value="Arcane" id="Arcane">
-                <label>Arcane</label><br>
-                <input type="radio" name="q4" value="Gravity Falls" id="Gravity Falls">
-                <label>Gravity Falls</label><br>
-                <input type="radio" name="q4" value="Vox Machina" id="Vox Machina">
-                <label>Vox Machina</label><br>
+                <img class="puzzle-img" src="../../Media/puzzles/puzzle+0.Kh2.png" />
+                <input type="text" name="q4" class="questen-input"/>
+
             </td>
         </tr>
         <tr>
             <td class="questen-box">
-                <p class="questen">Complete the name of the Movie DND Honor amoung ________?</p>
-                <input type="radio" name="q5" value="Thieves" id="Thieves">
-                <label>Thieves</label><br>
-                <input type="radio" name="q5" value="Merceners" id="Merceners">
-                <label>Merceners</label><br>
-                <input type="radio" name="q5" value="Dungeoneers" id="Dungeoneers">
-                <label>Dungeoneers</label><br>
+                <img src="../../Media/puzzles/puzzle+300..png" />
+                <input type="text" name="q5" class="questen-input"/>
+            </td>
+        </tr>
+            <tr>
+            <td class="questen-box">
+                <img src="../../Media/puzzles/puzzle+600.Qxf6.png" />
+                <img class="puzzle-img" src="../../Media/puzzles/puzzle+600.Qxf6.png" />
+                <input type="text" name="q6" class="questen-input"/>
             </td>
         </tr>
     </table>
@@ -68,14 +58,24 @@
     <input type="reset" value="delete" />
     <style>
 
-        
         .questen{
             color: rgb(82 51 4)
         }
+        
         .questen-box{
+            height:700px;
             background-color:rgb(206 146 54 / 0.4);
-            padding: 15px;
+            padding: 0;
         }
+
+        .puzzle-img{
+
+        }
+
+        .questen-input{
+
+        }
+
         #finalScore{
             width:60px;
             height: 30px;

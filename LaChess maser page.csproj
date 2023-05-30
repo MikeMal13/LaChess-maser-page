@@ -96,6 +96,12 @@
     <Content Include="Media\players\Teimour Radjabov.jpeg" />
     <Content Include="Media\players\Viswanathan Anand.jpg" />
     <Content Include="Media\players\Wesley So.jpg" />
+    <Content Include="Media\puzzles\puzzel-600.Rb8.png" />
+    <Content Include="Media\puzzles\puzzle+0.Be5.png" />
+    <Content Include="Media\puzzles\puzzle+0.Kh2.png" />
+    <Content Include="Media\puzzles\puzzle+300.Rxd5.png" />
+    <Content Include="Media\puzzles\puzzle+600.Qxf6.png" />
+    <Content Include="Media\puzzles\puzzle-300.Rxe8+.png" />
     <Content Include="Media\z_garbge\DALL·E 2023-03-29 11.34.11 - a fortune-telling chess pawn reading your fate in the giant crop of the black king, digital art.png" />
     <Content Include="Media\Logos\LaChessLogoNoBackground.png" />
     <Content Include="Media\Logos\laChessLogoSimplenoBackground.png" />
@@ -120,6 +126,18 @@
     <Content Include="Pages\login\Login.aspx" />
     <Content Include="Pages\players\Alireza Firouzja.aspx" />
     <Content Include="Pages\players\Ian Nepomniachtchi.aspx" />
+    <Content Include="Pages\players\Anish Giri.aspx" />
+    <Content Include="Pages\players\Fabiano Caruana.aspx" />
+    <Content Include="Pages\players\Wesley So.aspx" />
+    <Content Include="Pages\players\Viswanathan Anand.aspx" />
+    <Content Include="Pages\players\Sergey Karjakin.aspx" />
+    <Content Include="Pages\players\Levon Aronian.aspx" />
+    <Content Include="Pages\players\Alexander Grischuk.aspx" />
+    <Content Include="Pages\players\Richard Rapport.aspx" />
+    <Content Include="Pages\players\Maxime Vachier-Lagrave.aspx" />
+    <Content Include="Pages\players\Leinier Dominguez Perez.aspx" />
+    <Content Include="Pages\players\Shakhriyar Mamedyarov.aspx" />
+    <Content Include="Pages\players\Parham Maghsoodloo.aspx" />
     <Content Include="Pages\players\Magnus Carelson.aspx" />
     <Content Include="Pages\players\Gary Kaskarov.aspx" />
     <Content Include="chessBoard\pictures\bakeround.png" />
@@ -230,6 +248,90 @@
     </Compile>
     <Compile Include="Pages\players\Ian Nepomniachtchi.aspx.designer.cs">
       <DependentUpon>Ian Nepomniachtchi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Anish Giri.aspx.cs">
+      <DependentUpon>Anish Giri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Anish Giri.aspx.designer.cs">
+      <DependentUpon>Anish Giri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Fabiano Caruana.aspx.cs">
+      <DependentUpon>Fabiano Caruana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Fabiano Caruana.aspx.designer.cs">
+      <DependentUpon>Fabiano Caruana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Wesley So.aspx.cs">
+      <DependentUpon>Wesley So.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Wesley So.aspx.designer.cs">
+      <DependentUpon>Wesley So.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Viswanathan Anand.aspx.cs">
+      <DependentUpon>Viswanathan Anand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Viswanathan Anand.aspx.designer.cs">
+      <DependentUpon>Viswanathan Anand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Sergey Karjakin.aspx.cs">
+      <DependentUpon>Sergey Karjakin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Sergey Karjakin.aspx.designer.cs">
+      <DependentUpon>Sergey Karjakin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Levon Aronian.aspx.cs">
+      <DependentUpon>Levon Aronian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Levon Aronian.aspx.designer.cs">
+      <DependentUpon>Levon Aronian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Alexander Grischuk.aspx.cs">
+      <DependentUpon>Alexander Grischuk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Alexander Grischuk.aspx.designer.cs">
+      <DependentUpon>Alexander Grischuk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Richard Rapport.aspx.cs">
+      <DependentUpon>Richard Rapport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Richard Rapport.aspx.designer.cs">
+      <DependentUpon>Richard Rapport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Maxime Vachier-Lagrave.aspx.cs">
+      <DependentUpon>Maxime Vachier-Lagrave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Maxime Vachier-Lagrave.aspx.designer.cs">
+      <DependentUpon>Maxime Vachier-Lagrave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Leinier Dominguez Perez.aspx.cs">
+      <DependentUpon>Leinier Dominguez Perez.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Leinier Dominguez Perez.aspx.designer.cs">
+      <DependentUpon>Leinier Dominguez Perez.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Shakhriyar Mamedyarov.aspx.cs">
+      <DependentUpon>Shakhriyar Mamedyarov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Shakhriyar Mamedyarov.aspx.designer.cs">
+      <DependentUpon>Shakhriyar Mamedyarov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\players\Parham Maghsoodloo.aspx.cs">
+      <DependentUpon>Parham Maghsoodloo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\players\Parham Maghsoodloo.aspx.designer.cs">
+      <DependentUpon>Parham Maghsoodloo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\players\Magnus Carelson.aspx.cs">
       <DependentUpon>Magnus Carelson.aspx</DependentUpon>

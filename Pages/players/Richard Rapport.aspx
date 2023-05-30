@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Magnus Carelson.aspx.cs" Inherits="LaChess_maser_page.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Richard Rapport.aspx.cs" Inherits="LaChess_maser_page.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -7,7 +7,7 @@
     <script src="../../Players.js"></script>
 
     <script>
-        generatePage(4);
+        generatePage(15);
     </script>
 
 </asp:Content>

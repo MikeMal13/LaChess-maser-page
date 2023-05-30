@@ -84,17 +84,14 @@
     border-bottom-width: 3px;
     /**/
     padding: 0;
+    margin-top: -7.5px;
     /**/
     overflow: hidden;
     height: 200px;
-    transition-property: height;
-    transition-duration: .5s;
 }
 
     .searchDiv:hover {
-        transition-delay: 2s;
         background-color: rgb(0, 0, 40, 0.13);
-        transition: height .5s;
     }
 
 
