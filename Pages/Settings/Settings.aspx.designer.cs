@@ -15,12 +15,12 @@ namespace LaChess_maser_page.Pages
     {
 
         /// <summary>
-        /// btninsert control.
+        /// btn_delete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btninsert;
+        protected global::System.Web.UI.WebControls.Button btn_delete;
     }
 }

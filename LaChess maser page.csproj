@@ -147,6 +147,7 @@
     <Content Include="Players.js" />
     <Content Include="searchBar.css" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="z.Users.SQL.txt" />
     <Content Include="Web.config" />
     <Content Include="Pages\players\Bodbby Fischer.aspx" />
     <Content Include="Pages\Home\Home.aspx" />

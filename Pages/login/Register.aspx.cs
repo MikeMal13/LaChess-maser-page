@@ -32,6 +32,7 @@ namespace LaChess_maser_page.Pages
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";    
                 con.Open();
+
                 Random r = new Random();
 
 
@@ -40,7 +41,7 @@ namespace LaChess_maser_page.Pages
                                mail + "','" + gender + "','" + time1 + "','" + 
                                time2 + "','" + time3 + "','" + time4 + "','" + 
                                time5 + "','" + birthday + "','" + livingArea + 
-                               "')";   
+                               "')";
 
                 SqlDataAdapter da = new SqlDataAdapter(s, con);
                 DataSet ds = new DataSet();
