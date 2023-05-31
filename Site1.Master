@@ -49,7 +49,7 @@
             <table id="table" border="0">
                 
                 <tr>
-                    <td colspan="2" id="Title">
+                    <td colspan="2" id="Title" style="padding-bottom: 40px;">
                         <div id="TitleDiv">
                             <!--img class="logo" style="margin-top:20px;" src="../../Media/Logos/LaChessLogoNoBackground.png" />
                             -->
@@ -120,7 +120,6 @@
                                 .DobuleLinks div{
                                     background-color: rgb(255, 255, 0, 0.2);
 
-                                    height: 30px;
                                     width: 130px;
                                     display:contents;
                                 }
@@ -163,6 +162,11 @@
                                           <div><a href="../Settings/AdminPage.aspx">AdminPage</a></div>
                                     <%} %>
                                 </div>
+                                <div class="DobuleLinks">
+
+                                    <div><asp:Button ID="bnt_log_out" runat="server" Text="log out" OnClick="bnt_log_out_Click" /></div>
+                                </div>
+
                                 <%} %>
 
                             </div>

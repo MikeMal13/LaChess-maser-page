@@ -13,5 +13,12 @@ namespace LaChess_maser_page
         {
 
         }
+
+        protected void bnt_log_out_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("../login/Login.aspx");
+        }
     }
 }

@@ -81,6 +81,7 @@
     <Content Include="chessBoard\brainFunctions.js" />
     <Content Include="chessBoard\brain.js" />
     <Content Include="chessBoard\creatBoard.js" />
+    <Content Include="Global.asax" />
     <Content Include="Media\bakground\borwnBackgrpund.jpg" />
     <Content Include="Media\players\Alexander Grischuk.jpg" />
     <Content Include="Media\players\Alireza Firouzja.jpg" />
@@ -161,8 +162,9 @@
     <Content Include="Pages\board\PlayBoard.aspx" />
     <Content Include="Pages\players\playersCss.css" />
     <Content Include="Pages\Settings\AdminPage.aspx" />
-    <Content Include="Pages\Settings\UserSettings.aspx" />
     <Content Include="Pages\login\Register.aspx" />
+    <Content Include="Pages\Settings\UserSettings.aspx" />
+    <Content Include="Pages\Settings\UserSettings.js" />
     <Content Include="Players.js" />
     <Content Include="README.txt" />
     <Content Include="searchBar.css" />
@@ -174,6 +176,9 @@
     <Content Include="Pages\players\Ding Liren.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Pages\board\Pazzles.aspx.cs">
       <DependentUpon>Pazzles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -364,19 +369,19 @@
     <Compile Include="Pages\Settings\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Settings\UserSettings.aspx.cs">
-      <DependentUpon>UserSettings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Settings\UserSettings.aspx.designer.cs">
-      <DependentUpon>UserSettings.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\login\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\login\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\UserSettings.aspx.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\UserSettings.aspx.designer.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

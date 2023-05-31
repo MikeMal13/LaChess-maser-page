@@ -7,7 +7,7 @@
     <script src="../../Players.js"></script>
 
     <script>
-        generatePage(4);
+        generatePage(2);
     </script>
 
 </asp:Content>

@@ -8,7 +8,7 @@ namespace laChess
 {
     public class Class1
     {
-        public static string connecionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";
+        public static string connecionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Magshimim\source\repos\LaChess-maser-page2\App_Data\Users.mdf;Integrated Security=True";
 
         public static long[] Admins_IDs = {
             1,

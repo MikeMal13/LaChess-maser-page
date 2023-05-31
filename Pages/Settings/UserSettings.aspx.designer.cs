@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaChess_maser_page.Pages
+namespace LaChess_maser_page.Pages.Settings
 {
 
 
-    public partial class Settings2
+    public partial class UserSettings
     {
 
         /// <summary>
