@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using laChess;
 
 namespace LaChess_maser_page.Pages.login
 {
@@ -19,7 +20,7 @@ namespace LaChess_maser_page.Pages.login
                 String pwd = Request.Form["password1"];
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";
+                con.ConnectionString = Class1.connecionString; 
                 con.Open();
 
                 //שאילתה ששולפת את המזהה של המשתמש ושומרת אותו בסשן

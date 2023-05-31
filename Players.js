@@ -92,7 +92,7 @@ function movePage(i) {
 function generatePage(id) {
     document.write(" \
         <p class='localTitle'>" + players[id][1] + "</p> \
-        <img src='../../Media/players" + players[id][2] + ".jpg' class='pfp'/> \
+        <img src='../../Media/players/" + players[id][2] + "' class='pfp'/> \
         <p class='contet'>" + players[id][4] + "</p > \
     ")
 }

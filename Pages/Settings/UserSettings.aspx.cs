@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using laChess;
 
 namespace masterPageLesson
 {
@@ -30,7 +31,7 @@ namespace masterPageLesson
 
                 if (Session["id"] != null)
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\123\Desktop\my tv list\masterPageLesson\App_Data\Database1.mdf"";Integrated Security=True");
+                    SqlConnection con = new SqlConnection(Class1.connecionString);
                     con.Open();
                     string s = "update Users set name='" + name + "',password1='" + password1 + "',mail='" + mail + "',role='" + Role + "',version1='" + version1 + "',version2='" + version2 + "',version3='" + version3 + "',version4='" + version4 + "',version5='" + version5 + "',birthday='" + birthday + "' where id= " + id + "";
                     SqlDataAdapter da = new SqlDataAdapter(s, con);

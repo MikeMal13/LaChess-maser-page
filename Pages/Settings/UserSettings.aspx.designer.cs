@@ -11,7 +11,7 @@ namespace LaChess_maser_page.Pages
 {
 
 
-    public partial class Settings
+    public partial class Settings2
     {
 
         /// <summary>

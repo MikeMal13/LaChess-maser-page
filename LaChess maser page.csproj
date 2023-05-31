@@ -160,7 +160,8 @@
     <Content Include="Media\players\bobby_fischer.jpg" />
     <Content Include="Pages\board\PlayBoard.aspx" />
     <Content Include="Pages\players\playersCss.css" />
-    <Content Include="Pages\Settings\Settings.aspx" />
+    <Content Include="Pages\Settings\AdminPage.aspx" />
+    <Content Include="Pages\Settings\UserSettings.aspx" />
     <Content Include="Pages\login\Register.aspx" />
     <Content Include="Players.js" />
     <Content Include="README.txt" />
@@ -356,12 +357,19 @@
       <DependentUpon>PlayBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="Pages\Settings\Settings.aspx.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
+    <Compile Include="Pages\Settings\AdminPage.aspx.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Settings\Settings.aspx.designer.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
+    <Compile Include="Pages\Settings\AdminPage.aspx.designer.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\UserSettings.aspx.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings\UserSettings.aspx.designer.cs">
+      <DependentUpon>UserSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\login\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

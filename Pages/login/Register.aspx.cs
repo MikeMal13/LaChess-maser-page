@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using laChess;
 
 namespace LaChess_maser_page.Pages
 {
@@ -30,7 +31,7 @@ namespace LaChess_maser_page.Pages
 
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\micha\Desktop\LaChess maser page-20230315T181831Z-001\LaChess maser page\App_Data\Users.mdf"";Integrated Security=True";    
+                con.ConnectionString = Class1.connecionString;
                 con.Open();
 
                 Random r = new Random();
