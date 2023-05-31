@@ -163,6 +163,7 @@
     <Content Include="Pages\Settings\Settings.aspx" />
     <Content Include="Pages\login\Register.aspx" />
     <Content Include="Players.js" />
+    <Content Include="README.txt" />
     <Content Include="searchBar.css" />
     <Content Include="StyleSheet1.css" />
     <Content Include="z.Users.SQL.txt" />

@@ -1,12 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Web;
 
 namespace laChess
 {
     public class Class1
     {
+        public static long[] Admins_IDs = {
+            1,
+        };
+
+        public static bool isAdmin(int id)
+        {
+            foreach (var admin_id in Admins_IDs)
+                if (id == admin_id) 
+                    return true;
+            
+
+            return false;
+        }
+
+        public static bool isAdmin(string id)
+        {
+            return isAdmin(int.Parse(id));
+        }
+
+
         public static char feeling = 'n';
 
 

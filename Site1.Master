@@ -159,6 +159,11 @@
                               <%if (Session["name"] != null){  %>
                                 <div class="DobuleLinks">
                                     <div><a href="../Settings/Settings.aspx">Settings</a></div>
+                                   
+                                    <%if (laChess.Class1.isAdmin(int.Parse(Session["Id"].ToString()))){  %>
+                                          <div><a href="../Settings/Settings.aspx">Settings</a></div>
+                                    
+                                    <%} %>
                                 </div>
                                 <%} %>
 
