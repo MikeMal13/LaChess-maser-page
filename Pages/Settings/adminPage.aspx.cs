@@ -64,7 +64,6 @@ namespace LaChess_maser_page.Pages.Settings
                     da = new SqlDataAdapter(s, con);
                     ds = new DataSet();
                     da.Fill(ds);
-                    Response.Redirect("Admin.aspx");
                 }
                 else if (Request.Form["btn"] == "delete")
                 {
@@ -75,7 +74,6 @@ namespace LaChess_maser_page.Pages.Settings
                     da = new SqlDataAdapter(s, con);
                     ds = new DataSet();
                     da.Fill(ds);
-                    Response.Redirect("Admin.aspx");
 
                 }
                 else if (Request.Form["btn"] == "update")
@@ -93,12 +91,12 @@ namespace LaChess_maser_page.Pages.Settings
                     String birthday = Request.Form["birthday"];
 
                     int id = int.Parse(Request.Form["id"]);
-                    s = "update Users set name='" + name + "',password1='" + password1 + "',mail='" + mail + "',role='" + Role + "',version1='" + version1 + "',version2='" + version2 + "',version3='" + version3 + "',version4='" + version4 + "',version5='" + version5 + "',birthday='" + birthday + "' where id= " + id + "";
+                    s = "update Users set name='" + name + "',password='" + password1 + "',mail='" + mail + "' where id= " + id + "";
                     da = new SqlDataAdapter(s, con);
                     da.Fill(ds);
-                    Response.Redirect("Admin.aspx");
                 }
 
+                    Response.Redirect("AdminPage.aspx");
             }
 
         }
