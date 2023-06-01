@@ -5,12 +5,17 @@
     <div id="adminDiv" runat="server"> 
 
 </div>
+<%if (laChess.Class1.isAdmin(int.Parse(Session["Id"].ToString())))
+    { %>
+
 
          <input type="submit" name="btn" value="add" />
     <br />
-    <input type="submit" name="btn" value="delete" />
+    <input type="submit" name="btn" value="delete" onclick="window.loction.reload()" />
     <input type="submit" name="btn" value="update" />
     <br />
+    <h3>ID:</h3>
+<br />
     <input type="text" name="id" />
     <br />
 
@@ -40,10 +45,10 @@
                
     <p>Replace your gender ❤️:</p>
                 <br />
-                <input type="radio" name="gender" value="male" id="male (trans)">
-                <label>GM</label><br>
-                <input type="radio" name="gender" value="female" id="female (trans)">
-                <label>Player</label><br>
+                <input type="radio" name="gender" value="male (trans)" id="male (trans)">
+                <label>male</label><br>
+                <input type="radio" name="gender" value="female (trans)" id="female (trans)">
+                <label>female</label><br>
                 <input type="radio" name="gender" value="Both" id="Both">
                 <label>Both</label>
     
@@ -61,9 +66,11 @@
                 <label>day (24 hours - 4 weeks)</label><br>
                 
     <div id="birthdayDiv"></div>
-    <label>Birthday:</label>
+    <br />
+    <label>Birthday: </label>
                 <input type="date" name="birthday" id="birthday">
-
+    <br />
+    <label>Living area: </label>
                                 <select name="livingArea" id="carFromSelect">
                                    <option value="">------</option>
                                     <option value="center">center</option>
@@ -71,4 +78,16 @@
                                     <option value="west">west</option>
                                     <option value="east">east</option>
                                 </select>
+
+    <style>
+        label {
+        color:rgb(255 190 109);
+        }
+    </style>
+    <%}
+        else
+        { %>
+    only admin
+    <%}
+        %>
 </asp:Content>

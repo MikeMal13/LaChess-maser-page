@@ -18,8 +18,7 @@ namespace laChess
         {
             foreach (var admin_id in Admins_IDs)
                 if (id == admin_id) 
-                    return true;
-            
+                    return true;            
 
             return false;
         }

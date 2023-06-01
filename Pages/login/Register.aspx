@@ -101,9 +101,11 @@
                                 <div id="errorLog1" class="errorLogs"></div>
                                 <div id="errorLog2" class="errorLogs"></div>
                                 <div id="errorLog3" class="errorLogs"></div>
+                                <div id="ServerError" name="ServerError" class="errorLogs" runat="server"></div>
                             </div>
 
                             <!-- <input type="button" class="submitButton" value="Register" onclick="submit()" /> -->
+                            <input class="submitButton" id="submitButton" type="button" value="Register" onclick="register()" />  
                             <input type="submit" class="submitButton" value="Register" onclick="return register()" />
                         </div>
 

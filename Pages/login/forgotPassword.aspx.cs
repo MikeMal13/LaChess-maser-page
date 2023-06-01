@@ -26,12 +26,13 @@ namespace LaChess_maser_page.Pages.login
                 SqlCommand cmd2 = new SqlCommand();
                 cmd2.Connection = con;
                 cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "SELECT password from Users WHERE name='" + name + "'";
+                cmd2.CommandText = "SELECT Id from Users WHERE name='" + name + "'";
                 object obj = cmd2.ExecuteScalar();
                 con.Close();
 
                 if (obj != null)
                 {
+                    Session["Id"] = obj;
                     Session["name"] = name;
                     Response.Write(obj);
                 }

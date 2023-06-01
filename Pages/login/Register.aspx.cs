@@ -37,6 +37,29 @@ namespace LaChess_maser_page.Pages
                 Random r = new Random();
 
 
+                bool nameExists;
+                try //check if name alredi exist in database
+                {
+                    SqlCommand cmd3 = new SqlCommand();
+                    cmd3.Connection = con;
+                    cmd3.CommandType = CommandType.Text;
+                    cmd3.CommandText = "SELECT id from users WHERE name='" + name + "'";
+                    cmd3.ExecuteScalar();
+                    nameExists = true; //if name exist no erreo will be triwn
+                }
+                catch //if name dont exist error will be trown and the catch will be executed
+                {
+                    nameExists = false;
+                }
+
+                if (nameExists)  //if name exist dont enter user into database
+                {
+                    ServerError.InnerHtml = "Name Already taken";
+                    return;
+                }
+
+
+
                 string s = "insert into Users(Id, name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
                                "values('" + r.Next(0, int.MaxValue) + "','" + name + "','" + pass + "','" + 
                                mail + "','" + gender + "','" + time1 + "','" + 
@@ -47,6 +70,8 @@ namespace LaChess_maser_page.Pages
                 SqlDataAdapter da = new SqlDataAdapter(s, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
+                
+
 
                 //שאילתה ששולפת את המזהה של המשתמש ושומרת אותו בסשן
                 SqlCommand cmd2 = new SqlCommand();
@@ -55,6 +80,7 @@ namespace LaChess_maser_page.Pages
                 cmd2.CommandText = "SELECT id from users WHERE name='" + name + "'AND password='" + pass + "'";
                 object obj = cmd2.ExecuteScalar();
                 con.Close();
+
 
                 if (obj != null)
                 {

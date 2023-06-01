@@ -14,14 +14,19 @@ namespace LaChess_maser_page.Pages.Settings
     {
         public static string addIfNotNull(string dataRow, string data)
         {
-            if (data != "")
+            if (data != null && !string.IsNullOrWhiteSpace(data))
+            {
                 return "," + dataRow + "='" + data + "'";
-            return "";
+            }
+            return " ";
         }
 
         string str;
         protected void Page_Load(object sender, EventArgs e)
         {
+            try { 
+            Random rnd = new Random();
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = Class1.connecionString;
             con.Open();
@@ -55,10 +60,10 @@ namespace LaChess_maser_page.Pages.Settings
             if (IsPostBack)
             {
                 int id = -1;
-                try { 
+                try {
                     id = int.Parse(Request.Form["id"]);
-                }
-                catch { } //id stays -1
+                } catch { /* id stays -1 */ }
+
 
                 String name = Request.Form["name"];
                 String password1 = Request.Form["password1"];
@@ -76,12 +81,12 @@ namespace LaChess_maser_page.Pages.Settings
                 string btn = Request.Form["btn"];
                 if (Request.Form["btn"] == "add")
                 {
-                    s = "insert into Users(name,password,mail,time1,time2,time3,time4,time5,livingArea,birthday) values('" + name + "','" + password1 + "','" + mail + "','" + time1 + "','" + time2 + "','" + time3 + "','" + time4 + "','" + time5 + "','" + livingArea + "','" + birthday + "')";
+                    s = "insert into Users(Id,name,password,mail,time1,time2,time3,time4,time5,gender,livingArea,birthday) values('" + (id == -1 ? rnd.Next(1, int.MaxValue) : id) + "','" + name + "','" + password1 + "','" + mail + "','" + time1 + "','" + time2 + "','" + time3 + "','" + time4 + "','" + time5 + "','" + gender + "','" + livingArea + "','" + birthday + "')";
                     da = new SqlDataAdapter(s, con);
                     ds = new DataSet();
                     da.Fill(ds);
                 }
-                else if (Request.Form["btn"] == "delete")
+                else if (Request.Form["btn"] == "delete" && id != -1)
                 {
                     s = "delete from Users where id=" + id + "";
                     da = new SqlDataAdapter(s, con);
@@ -89,23 +94,32 @@ namespace LaChess_maser_page.Pages.Settings
                     da.Fill(ds);
 
                 }
-                else if (Request.Form["btn"] == "update")
+                else if (Request.Form["btn"] == "update" && id != -1)
                 {
-                    s = "update Users set" + (name != "" ? " name='" + name + "'": "") + 
-                        addIfNotNull("password", password1) + addIfNotNull("mail", mail) + 
-                        addIfNotNull("time1", time1) + addIfNotNull("time2", time2) + 
-                        addIfNotNull("time3", time3) + addIfNotNull("time4", time4)+
-                        addIfNotNull("time5", time5) + addIfNotNull("gender", gender)+
-                        addIfNotNull("livingArea", livingArea) + addIfNotNull("birthday", birthday)+
-                        "' where id= " + id + "";
-                    Console.WriteLine(s);
+                    s = "update Users set " + addIfNotNull("name", name) +
+                        addIfNotNull("password", password1) + addIfNotNull("mail", mail) +
+                        addIfNotNull("time1", time1) + addIfNotNull("time2", time2) +
+                        addIfNotNull("time3", time3) + addIfNotNull("time4", time4) +
+                        addIfNotNull("time5", time5) + addIfNotNull("gender", gender) +
+                        addIfNotNull("livingArea", livingArea) + addIfNotNull("birthday", birthday) +
+                        " where id='" + id + "'";
+                    s = s.Remove(s.IndexOf(','), 1);
+
+                    adminDiv.InnerHtml = "<p>" + s + "</p>";
+
+
+
                     da = new SqlDataAdapter(s, con);
                     da.Fill(ds);
                 }
 
-                    Response.Redirect("AdminPage.aspx");
+                //Response.Redirect("AdminPage.aspx");
             }
-
+        }
+            catch
+            {
+                //fuck
+            }
         }
 
     }

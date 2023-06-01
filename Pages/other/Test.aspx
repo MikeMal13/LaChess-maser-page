@@ -5,7 +5,7 @@
 <table border="1" width="80%" style="background-color:none;">
         <tr>
             <td class="questen-box">
-                <img class="puzzle-img" src="../../Media/puzzles/puzzel-600.png" />
+                <img class="puzzle-img" src="../../Media/puzzles/puzzel-600.Rb8.png" />
                 <input type="text" name="q1" class="questen-input"/>
 
             </td>
@@ -31,6 +31,7 @@
         </tr>
         <tr>
             <td class="questen-box">
+                <img src="../../Media/puzzles/puzzle+0.Kh2.png" />
                 <img class="puzzle-img" src="../../Media/puzzles/puzzle+0.Kh2.png" />
                 <input type="text" name="q4" class="questen-input"/>
 
@@ -38,6 +39,7 @@
         </tr>
         <tr>
             <td class="questen-box">
+                <img src="../../Media/puzzles/puzzle+300.Rxd5.png" />
                 <img src="../../Media/puzzles/puzzle+300..png" />
                 <input type="text" name="q5" class="questen-input"/>
             </td>

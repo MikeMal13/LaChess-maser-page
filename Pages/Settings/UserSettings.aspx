@@ -5,56 +5,71 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
                 <h2>update page</h2>
-                <input type="reset" value="delete" />
-                <input type="submit" value="send" onclick="return checkRegister()"   />
-                <asp:Button ID="btn_delete" runat="server" Text="delete user" OnClick="btn_delete_Click" />
-                &nbsp;<div id="nameDiv"></div>
-                <label>name:</label>
-                <br />
+    <input type="submit" name="btn" value="delete" onclick="window.loction.reload()" />
+    <input type="submit" name="btn" value="update" />
+    <br />
                 
-    <input type="text" name="name" id="name" oninput="checkName()" />
+    <label>name:</label>
                 <br />
-                <div id="password1Div"></div>
+                <input type="text" name="name" id="name" oninput="checkName()" />
+                <br />
     
-    <label>password:</label>
+    <div id="password1Div"></div>
+                <label>password:</label>
                 <br />
                 <input type="password" name="password1" id="password1" oninput="checkPassword1()" />
-                <div id="password2Div"></div>
     
-    <label>confirm password:</label>
+    <div id="password2Div"></div>
+                <label>confirm password:</label>
                 <br />
                 <input type="password" name="password2" id="password2" oninput="checkPassword2()" />
-                
+    
     <div id="mailDiv"></div>
-    <label>mail:</label>
+                <label>mail:</label>
                 <br />
                 <input type="text" name="mail" id="mail" oninput="checkMail()" />
                 <br />
                 <div id="radioDiv"></div>
-    
-    <p>Choose your Role:</p>
+               
+    <p>Replace your gender ❤️:</p>
                 <br />
-                <input type="radio" name="Role" value="GM" id="GM">
-                <label>GM</label><br>
-                <input type="radio" name="Role" value="Player" id="PLayer">
-                <label>Player</label><br>
-                <input type="radio" name="Role" value="Both" id="Both">
+                <input type="radio" name="gender" value="male (trans)" id="male (trans)">
+                <label>male</label><br>
+                <input type="radio" name="gender" value="female (trans)" id="female (trans)">
+                <label>female</label><br>
+                <input type="radio" name="gender" value="Both" id="Both">
                 <label>Both</label>
-                <div id="checkBoxDiv"></div>
-                
-    <p>choose version/s (one or more) :</p>
-                <input type="checkbox" name="version1" value="version1"id="version1">
-                <label>version1</label><br>
-                <input type="checkbox" name="version2" value="version2"id="version2">
-                <label>version2</label><br>
-                <input type="checkbox" name="version3" value="version3"id="version3">
-                <label>version3</label><br>
-                <input type="checkbox" name="version4" value="version4"id="version4">
-                <label>version4</label><br>
-                <input type="checkbox" name="version5" value="version5"id="version5">
-                <label>version5</label><br>
+    
+    <div id="checkBoxDiv"></div>
+    <p>choose favorit time controll:</p>
+                <input type="checkbox" name="time1" value="version1"id="version1">
+                <label>bullet  (0.5 - 1.5)</label><br>
+                <input type="checkbox" name="time2" value="version2"id="version2">
+                <label>blitz   (2 - 5)</label><br>
+                <input type="checkbox" name="time3" value="version3"id="version3">
+                <label>casual  (10 - 20)</label><br>
+                <input type="checkbox" name="time4" value="version4"id="version4">
+                <label>long (30 - 90)</label><br>
+                <input type="checkbox" name="time5" value="version5"id="version5">
+                <label>day (24 hours - 4 weeks)</label><br>
                 
     <div id="birthdayDiv"></div>
-    <label>Birthday:</label>
+    <br />
+    <label>Birthday: </label>
                 <input type="date" name="birthday" id="birthday">
+    <br />
+    <label>Living area: </label>
+                                <select name="livingArea" id="carFromSelect">
+                                   <option value="">------</option>
+                                    <option value="center">center</option>
+                                    <option value="south">south</option>
+                                    <option value="west">west</option>
+                                    <option value="east">east</option>
+                                </select>
+
+    <style>
+        label {
+        color:rgb(255 190 109);
+        }
+    </style>
 </asp:Content>

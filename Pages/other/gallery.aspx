@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="gallery.aspx.cs" Inherits="LaChess_maser_page.Pages.other.gallery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="../../Players.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
@@ -22,15 +23,6 @@
     <script>
         var index = 1;
         var a;
-        var pics = [
-            "../../Media/players/bobby_fischer.jpg",
-            "../../Media/players/Ding.jpg",
-            "../../Media/players/Hikaru.jpg",
-            "../../Media/players/Kaskarove.jpg",
-            "../../Media/players/Lorem_Ispom.jpg",
-            "../../Media/players/Magnos.jpg",
-            "../../Media/Logos/LaChessLogo.png"
-        ]
 
         function Timer() {
             a = setTimeout(Show, 3000);
@@ -39,10 +31,10 @@
             clearTimeout(a);
         }
         function Show() {
-            if (index == pics.length - 1)
+            if (index == players.length - 1)
                 index = 0;
             index++;
-            pic.src = pics[index]
+            pic.src = "../../Media/players/" + players[index][2]
             console.log(index);
         }
 
