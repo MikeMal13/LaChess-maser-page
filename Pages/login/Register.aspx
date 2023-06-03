@@ -105,7 +105,6 @@
                             </div>
 
                             <!-- <input type="button" class="submitButton" value="Register" onclick="submit()" /> -->
-                            <input class="submitButton" id="submitButton" type="button" value="Register" onclick="register()" />  
                             <input type="submit" class="submitButton" value="Register" onclick="return register()" />
                         </div>
 

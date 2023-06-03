@@ -7,11 +7,38 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using laChess;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace LaChess_maser_page.Pages
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public static long LongRandom(long min, long max, Random rand)
+        {
+            long result = rand.Next((Int32)(min >> 32), (Int32)(max >> 32));
+            result = (result << 32);
+            result = result | (long)rand.Next((Int32)min, (Int32)max);
+            return result;
+        }
+
+
+        public static ulong HashCredentials(string username, string password)
+        {
+            string combinedString = username + password;
+            byte[] inputBytes = Encoding.UTF8.GetBytes(combinedString);
+
+            using (SHA256Managed sha256 = new SHA256Managed())
+            {
+                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+
+                // Take the first 8 bytes of the hash and convert to ulong (64-bit integer)
+                ulong hashedValue = BitConverter.ToUInt64(hashBytes, 0);
+
+                return hashedValue;
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
@@ -29,39 +56,50 @@ namespace LaChess_maser_page.Pages
                 String birthday = Request.Form["birthday"];
                 String livingArea = Request.Form["livingArea"];
 
+                ulong hasedPass = HashCredentials(pass, name);
+
 
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = Class1.connecionString;
                 con.Open();
 
-                Random r = new Random();
+                Random rnd = new Random();
 
+                { //delet all valuse after run
 
-                bool nameExists;
-                try //check if name alredi exist in database
-                {
+                    //check if name alredi exist in database
+                    //cmd3.ExecuteScalar() will return null if name doesnt exist
                     SqlCommand cmd3 = new SqlCommand();
                     cmd3.Connection = con;
                     cmd3.CommandType = CommandType.Text;
                     cmd3.CommandText = "SELECT id from users WHERE name='" + name + "'";
-                    cmd3.ExecuteScalar();
-                    nameExists = true; //if name exist no erreo will be triwn
-                }
-                catch //if name dont exist error will be trown and the catch will be executed
-                {
-                    nameExists = false;
+
+                    //if name exist dont enter user into database
+                    if (cmd3.ExecuteScalar() != null)
+                    {
+                        ServerError.InnerHtml = "Name Already taken";
+                        return;
+                    }
                 }
 
-                if (nameExists)  //if name exist dont enter user into database
-                {
-                    ServerError.InnerHtml = "Name Already taken";
-                    return;
-                }
+                ulong id;
+                { //delet all valuse after run
+                    //get a Id that is not in use
+                    SqlCommand cmd3;
+                    do
+                    {
+                        id = (ulong) LongRandom(long.MinValue, long.MaxValue, rnd);
+                        cmd3 = new SqlCommand();
+                        cmd3.Connection = con;
+                        cmd3.CommandType = CommandType.Text;
+                        cmd3.CommandText = "SELECT name from users WHERE Id='" + id + "'";
 
+                    } while (cmd3.ExecuteScalar() != null);
+                }
 
 
                 string s = "insert into Users(Id, name,password,mail,gender,time1,time2,time3,time4,time5,birthday,livingArea)" +
-                               "values('" + r.Next(0, int.MaxValue) + "','" + name + "','" + pass + "','" + 
+                               "values('" + id + "','" + name + "','" + hasedPass + "','" + 
                                mail + "','" + gender + "','" + time1 + "','" + 
                                time2 + "','" + time3 + "','" + time4 + "','" + 
                                time5 + "','" + birthday + "','" + livingArea + 
