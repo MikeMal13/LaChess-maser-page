@@ -117,7 +117,7 @@ namespace LaChess_maser_page.Pages
                 SqlCommand cmd2 = new SqlCommand();
                 cmd2.Connection = con;
                 cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "SELECT id from users WHERE name='" + name + "'AND password='" + pass + "'";
+                cmd2.CommandText = "SELECT id from users WHERE name='" + name + "'AND password='" + hasedPass + "'";
                 object obj = cmd2.ExecuteScalar();
                 con.Close();
 

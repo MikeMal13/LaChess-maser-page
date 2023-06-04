@@ -14,7 +14,7 @@ namespace laChess
             1,
         };
 
-        public static bool isAdmin(int id)
+        public static bool isAdmin(long id)
         {
             foreach (var admin_id in Admins_IDs)
                 if (id == admin_id) 

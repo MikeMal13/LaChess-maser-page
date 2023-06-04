@@ -5,7 +5,7 @@
     <div id="adminDiv" runat="server"> 
 
 </div>
-<%if (laChess.Class1.isAdmin(int.Parse(Session["Id"].ToString())))
+<%if (laChess.Class1.isAdmin(long.Parse(Session["Id"].ToString())))
     { %>
 
 
