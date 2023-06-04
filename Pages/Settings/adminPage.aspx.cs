@@ -81,8 +81,12 @@ namespace LaChess_maser_page.Pages.Settings
                 string btn = Request.Form["btn"];
                 if (Request.Form["btn"] == "add")
                 {
-                    s = "insert into Users(Id,name,password,mail,time1,time2,time3,time4,time5,gender,livingArea,birthday) values('" + (id == -1 ? rnd.Next(1, int.MaxValue) : id) + "','" + name + "','" + password1 + "','" + mail + "','" + time1 + "','" + time2 + "','" + time3 + "','" + time4 + "','" + time5 + "','" + gender + "','" + livingArea + "','" + birthday + "')";
-                    da = new SqlDataAdapter(s, con);
+                    s = "insert into Users(Id,name,password,mail,time1,time2,time3,time4,time5,gender,livingArea,birthday) values('" +
+                            (id == -1 ? rnd.Next(1, int.MaxValue) : id) + "','" + name + "','" + password1 + "','" +
+                            mail + "','" + time1 + "','" + time2 + "','" + time3 + "','" + time4 + "','" + time5 + "','" + gender +
+                            "','" + livingArea + "','" + birthday + "')";
+                 
+                        da = new SqlDataAdapter(s, con);
                     ds = new DataSet();
                     da.Fill(ds);
                 }
