@@ -14,28 +14,29 @@ namespace LaChess_maser_page.Pages
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        public static long LongRandom(long min, long max, Random rand)
+        static ulong Random_32ulong(Random rand)
         {
-            long result = rand.Next((Int32)(min >> 32), (Int32)(max >> 32));
-            result = (result << 32);
-            result = result | (long)rand.Next((Int32)min, (Int32)max);
-            return result;
+            return (ulong)rand.Next(int.MinValue, int.MaxValue);
+        }
+
+        static long RandomId(Random rand)
+        {
+            return (long)(((Random_32ulong(rand)) << 32) + Random_32ulong(rand));
         }
 
 
-        public static ulong HashCredentials(string username, string password)
+        public static string Hash_OneWay_256(string text, string salt = "")
         {
-            string combinedString = username + password;
-            byte[] inputBytes = Encoding.UTF8.GetBytes(combinedString);
-
-            using (SHA256Managed sha256 = new SHA256Managed())
+            // Uses SHA256 to create the hash
+            using (var sha = new SHA256Managed())
             {
-                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+                // Convert the string to a byte array first, to be processed
+                byte[] textBytes = Encoding.UTF8.GetBytes(text + salt);
+                byte[] hashBytes = sha.ComputeHash(textBytes);
 
-                // Take the first 8 bytes of the hash and convert to ulong (64-bit integer)
-                ulong hashedValue = BitConverter.ToUInt64(hashBytes, 0);
-
-                return hashedValue;
+                //cant return bytes (not supporten in SQL)
+                //return in string in base 64
+                return Convert.ToBase64String(hashBytes);
             }
         }
 
@@ -56,7 +57,8 @@ namespace LaChess_maser_page.Pages
                 String birthday = Request.Form["birthday"];
                 String livingArea = Request.Form["livingArea"];
 
-                ulong hasedPass = HashCredentials(pass, name);
+                //using string becose 
+                String hasedPass = Hash_OneWay_256(pass, name);
 
 
                 SqlConnection con = new SqlConnection();
@@ -82,13 +84,13 @@ namespace LaChess_maser_page.Pages
                     }
                 }
 
-                ulong id;
+                long id;
                 { //delet all valuse after run
                     //get a Id that is not in use
                     SqlCommand cmd3;
                     do
                     {
-                        id = (ulong) LongRandom(long.MinValue, long.MaxValue, rnd);
+                        id = RandomId(rnd);
                         cmd3 = new SqlCommand();
                         cmd3.Connection = con;
                         cmd3.CommandType = CommandType.Text;

@@ -14,21 +14,21 @@ namespace LaChess_maser_page.Pages.login
 {
     public partial class Login : System.Web.UI.Page
     {
-        public static ulong HashCredentials(string username, string password)
+        public static string Hash_OneWay_256(string text, string salt = "")
         {
-            string combinedString = username + password;
-            byte[] inputBytes = Encoding.UTF8.GetBytes(combinedString);
-
-            using (SHA256Managed sha256 = new SHA256Managed())
+            // Uses SHA256 to create the hash
+            using (var sha = new SHA256Managed())
             {
-                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+                // Convert the string to a byte array first, to be processed
+                byte[] textBytes = Encoding.UTF8.GetBytes(text + salt);
+                byte[] hashBytes = sha.ComputeHash(textBytes);
 
-                // Take the first 8 bytes of the hash and convert to ulong (64-bit integer)
-                ulong hashedValue = BitConverter.ToUInt64(hashBytes, 0);
-
-                return hashedValue;
+                //cant return bytes (not supporten in SQL)
+                //return in string in base 64
+                return Convert.ToBase64String(hashBytes);
             }
         }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,7 +37,7 @@ namespace LaChess_maser_page.Pages.login
                 String name = Request.Form["name"];
                 String pwd = Request.Form["password1"];
 
-                ulong hasedPassword = HashCredentials(pwd, name);
+                String hasedPassword = Hash_OneWay_256(pwd, name);
 
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = Class1.connecionString; 
