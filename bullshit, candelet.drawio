@@ -520,7 +520,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="oF8TpryBeVcMnCMbtJEv" name="Page-11">
-    <mxGraphModel dx="1846" dy="1810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3420" dy="2800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -776,7 +776,7 @@
           <mxGeometry x="120" y="555" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="odfPlG7943U6aj1UuZ4z-68" value="board.&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;converToString&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="555" width="120" height="60" as="geometry" />
+          <mxGeometry x="260" y="580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="odfPlG7943U6aj1UuZ4z-72" value="replayToName" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="1000" width="120" height="60" as="geometry" />
@@ -839,7 +839,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="odfPlG7943U6aj1UuZ4z-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.202;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="odfPlG7943U6aj1UuZ4z-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.683;exitY=0;exitDx=0;exitDy=0;entryX=0.202;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="odfPlG7943U6aj1UuZ4z-68">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="342.04" y="555" as="sourcePoint" />
             <mxPoint x="341.9959999999997" y="449.6400000000003" as="targetPoint" />
@@ -868,9 +868,9 @@
             <mxPoint x="360" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="odfPlG7943U6aj1UuZ4z-165" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;אם המשחק הסתיים&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;אז ללא ערפל&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#EA6B66;labelBorderColor=default;" vertex="1" connectable="0" parent="odfPlG7943U6aj1UuZ4z-114">
+        <mxCell id="odfPlG7943U6aj1UuZ4z-165" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;אם המשחק הסתיים&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;אז ללא ארפל&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#FFFFFF;labelBorderColor=default;" vertex="1" connectable="0" parent="odfPlG7943U6aj1UuZ4z-114">
           <mxGeometry x="0.2328" y="2" relative="1" as="geometry">
-            <mxPoint x="-40" y="13" as="offset" />
+            <mxPoint x="-40" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="odfPlG7943U6aj1UuZ4z-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="odfPlG7943U6aj1UuZ4z-129" target="odfPlG7943U6aj1UuZ4z-132">
