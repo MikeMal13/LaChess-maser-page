@@ -520,7 +520,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="oF8TpryBeVcMnCMbtJEv" name="Page-11">
-    <mxGraphModel dx="2067" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1846" dy="1810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -739,6 +739,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="odfPlG7943U6aj1UuZ4z-138" value="&quot;boardPos&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="odfPlG7943U6aj1UuZ4z-119">
+          <mxGeometry x="-0.1122" y="4" relative="1" as="geometry">
+            <mxPoint y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="odfPlG7943U6aj1UuZ4z-59" value="&lt;br&gt;&lt;div style=&quot;font-weight: normal; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Helvetica&quot;&gt;sendPlayerBoard&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="390" width="120" height="60" as="geometry" />
         </mxCell>
@@ -767,6 +772,11 @@
               <mxPoint x="400" y="960" />
               <mxPoint x="390" y="960" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="odfPlG7943U6aj1UuZ4z-137" value="&quot;boardPosHistory&quot;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" vertex="1" connectable="0" parent="odfPlG7943U6aj1UuZ4z-120">
+          <mxGeometry x="-0.0268" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="odfPlG7943U6aj1UuZ4z-75" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;self.boards[int(body)]&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
