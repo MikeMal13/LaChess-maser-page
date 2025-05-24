@@ -1261,7 +1261,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0RzORxMF9ziT8WS3rqfO" name="Page-14">
-    <mxGraphModel dx="2852" dy="2963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="317" dy="1368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1449,24 +1449,20 @@
         <mxCell id="GAY9LG4ppdtSLSXfW9NN-14" value="מוסיף משבצות שהם תמיד בשדה ראיה." style="whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
           <mxGeometry x="633" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dqi5BAFqmC-vpd8GvohD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.476;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="dqi5BAFqmC-vpd8GvohD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.476;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.538;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="GAY9LG4ppdtSLSXfW9NN-9">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="827.4" y="-128.56" as="sourcePoint" />
             <mxPoint x="827.0200000000001" y="-90.00000000000006" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="827.9" y="-108.56" />
-              <mxPoint x="826.9" y="-108.56" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dqi5BAFqmC-vpd8GvohD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.513;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GAY9LG4ppdtSLSXfW9NN-12" target="GAY9LG4ppdtSLSXfW9NN-13">
+        <mxCell id="dqi5BAFqmC-vpd8GvohD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.512;exitY=1.004;exitDx=0;exitDy=0;entryX=0.513;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="GAY9LG4ppdtSLSXfW9NN-12" target="GAY9LG4ppdtSLSXfW9NN-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dqi5BAFqmC-vpd8GvohD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.516;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GAY9LG4ppdtSLSXfW9NN-13" target="24ivTvhPqNptHNLdENak-280">
+        <mxCell id="dqi5BAFqmC-vpd8GvohD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.511;exitY=1.015;exitDx=0;exitDy=0;entryX=0.516;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="GAY9LG4ppdtSLSXfW9NN-13" target="24ivTvhPqNptHNLdENak-280">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="827" y="60" />
-              <mxPoint x="827" y="101" />
+              <mxPoint x="826" y="101" />
               <mxPoint x="827" y="101" />
             </Array>
           </mxGeometry>
